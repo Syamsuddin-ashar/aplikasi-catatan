@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Mengatur karakter encoding menjadi UTF-8 untuk mendukung berbagai karakter -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mengatur viewport untuk membuat layout responsif pada berbagai perangkat -->
+    <title>Note-taking App</title> <!-- Menentukan judul halaman yang akan tampil di tab browser -->
+    <link rel="stylesheet" href="style.css"> <!-- Menghubungkan file CSS eksternal untuk mengatur tampilan halaman -->
+</head>
+<body>
+    <div id="app">
+        <h1>Note-taking App</h1> <!-- Judul utama aplikasi -->
+
+        <!-- Editor untuk membuat dan menyimpan catatan -->
+        <div id="note-editor">
+            <input type="text" id="note-title" placeholder="Title"> <!-- Input untuk memasukkan judul catatan -->
+            <textarea id="note-content" placeholder="Write your note here..."></textarea> <!-- Area teks untuk memasukkan isi catatan -->
+            <button id="save-note">Save Note</button> <!-- Tombol untuk menyimpan catatan -->
+        </div>
+
+        <!-- Daftar catatan yang sudah dibuat -->
+        <div id="note-list">
+            <h2>Your Notes</h2> <!-- Subjudul untuk bagian daftar catatan -->
+            <ul id="notes"></ul> <!-- Elemen list yang akan menampilkan catatan-catatan yang telah disimpan -->
+        </div>
+    </div>
+
+    <!-- Menghubungkan file JavaScript eksternal untuk mengatur logika interaktif aplikasi -->
+    <script src="script.js"></script>
+</body>
+</html>
